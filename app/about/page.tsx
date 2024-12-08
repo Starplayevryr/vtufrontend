@@ -1,14 +1,19 @@
 import React from "react";
 
-const about = () =>{
-    return(
-        <>
-            <center>
-                <h1 className="about1">About the Fest</h1>
-                </center>
-            <p className ="about2">The 24th VTU Youth Fest hosted by GAT marks our 25th Anniversary. Join us to celebrate culture, creativity, and sustainability in this unique Silver Jubilee event.</p>
-        </>
-    )
-}
+const Page = () => {
+  return (
+    <div className="p-10">
+      {/* Adds padding around the entire content */}
+      <h1 className="text-center text-5xl font-bold mb-10 tracking-wide">
+        About the Fest
+      </h1>
+      <p className="text-center text-3xl leading-relaxed tracking-wider">
+        The 24th VTU Youth Fest hosted by GAT marks our 25th Anniversary. Join
+        us to celebrate culture, creativity, and sustainability in this unique
+        Silver Jubilee event.
+      </p>
+    </div>
+  );
+};
 
-export default about;
+export default Page;

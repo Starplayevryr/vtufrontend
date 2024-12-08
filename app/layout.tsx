@@ -1,7 +1,7 @@
 // app/layout.tsx
 import React, { ReactNode } from 'react';
-import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';
+import Navbar from './components/Navbar';
+import Footer from './components/Footer';
 // You can create this Footer component if needed
 
 // Global layout for pages

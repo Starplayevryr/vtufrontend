@@ -2,7 +2,7 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
-import Navbar from './components/Navbar/Navbar';// Adjust the import path as needed
+import Navbar from './components/Navbar';// Adjust the import path as needed
  // Adjust the import path as needed
 
 const Home = () => {

@@ -1,7 +1,8 @@
 // app/layout.tsx
 import React, { ReactNode } from 'react';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from '.././components/Navbar';
+import Footer from '.././components/Footer';
+import './globals.css';;
 // You can create this Footer component if needed
 
 // Global layout for pages
@@ -12,10 +13,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <head>
         {/* You can add custom head tags here, like meta tags, link to styles, etc. */}
       </head>
-      <body>
-         <Navbar />
+      <body className='content-evenly bg-gray-300'>
+         {/* <Navbar /> */}
          <main className="container my-4">{children}</main>
-         <Footer/>
+         {/* <Footer/> */}
       </body>
      
 

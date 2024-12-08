@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 
 interface OuterBoxProps {
@@ -10,13 +10,13 @@ interface OuterBoxProps {
 
 const OuterBox: React.FC<OuterBoxProps> = ({
   children,
-  width = "w-96", // Default width
+  width = "w-100", // Default width
   height = "h-auto", // Default height
   bgColor = "bg-white", // Default background color
 }) => {
   return (
     <div
-      className={`rounded-lg shadow-lg p-6 ${width} ${height} ${bgColor} 
+      className={`rounded-lg shadow-lg p-8 ${width} ${height} ${bgColor} 
                   flex flex-col items-center justify-center`}
     >
       {children}

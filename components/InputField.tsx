@@ -1,5 +1,5 @@
-"use client"
-import React from 'react';
+"use client";
+import React from "react";
 
 interface InputFieldProps {
   label: string; // Label text for the input field
@@ -11,7 +11,7 @@ interface InputFieldProps {
 const InputField: React.FC<InputFieldProps> = ({
   label,
   placeholder,
-  type="text" ,
+  type = "text",
   onChange,
 }) => {
   return (

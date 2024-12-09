@@ -19,13 +19,13 @@ const Login = () => {
           onChange={() => {}}
         />
         <InputField
-          label="Contact Person"
-          placeholder="Enter your contact person"
+          label="College Code"
+          placeholder="Enter your college code"
           onChange={() => {}}
         />
         <InputField
           label="Contact Number"
-          placeholder="Enter your contact person"
+          placeholder="Enter your contact number"
           type="tel"
           onChange={() => {}}
         />

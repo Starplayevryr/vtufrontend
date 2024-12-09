@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import Navbar from ".././components/Navbar";
 import Footer from ".././components/Footer";
 import "./globals.css";
+import { ToastContainer } from "react-toastify";
 
 // Global layout for pages
 const Layout = ({ children }: { children: React.ReactNode }) => {
@@ -13,6 +14,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <body>
         <Navbar />
         <main className="flex flex-col">{children}</main>
+        <ToastContainer />
         <Footer />
       </body>
     </html>

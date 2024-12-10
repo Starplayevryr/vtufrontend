@@ -13,7 +13,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
       <body>
         <Navbar />
         <main className="flex flex-col">{children}</main>
-        <Footer />
+       
       </body>
     </html>
   );

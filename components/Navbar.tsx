@@ -1,25 +1,29 @@
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <header className="bg-[#f6f6f6] w-full">
-      {/* Logo and text container */}
-      <div className="flex flex-col items-center justify-center text-center py-6">
-        <h1 className="text-5xl font-bold mb-5">GAT VTU Youth Fest 2025</h1>
-        <p className="text-2xl mb-10 py-6 text-[#3f3f3f]">
-          Celebrating 25 Years of Excellence
-        </p>
+    <header className="w-full fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-4">
+      {/* Logo and Text on the top-left corner */}
+      <div className="flex items-center">
+        <Link href="/">
+          <img
+            src="/images/college-logo.png" // Replace with your logo image path
+            alt="Logo"
+            className="w-20 h-auto"
+          />
+        </Link>
+        {/* Text next to the logo */}
+        <span className="ml-4 text-base text-white font-semibold">Global Academy of Technology</span>
       </div>
 
-      {/* Navbar links */}
+      {/* Navbar links aligned to the top-right */}
       <nav>
-        <ul className="flex justify-center text-2xl space-x-8 bg-gray-200 py-3 w-full">
+        <ul className="flex justify-end space-x-8 bg-opacity-0">
           <li>
             <Link
               href="/"
-              className="bg-gray-200 px-4 py-2 rounded-md transition-all duration-300 hover:bg-yellow-500"
+              className="text-lg text-white transition-all duration-300 hover:text-yellow-500"
             >
               Home
             </Link>
@@ -27,7 +31,7 @@ const Navbar = () => {
           <li>
             <Link
               href="/about"
-              className="bg-gray-200 px-4 py-2 rounded-md transition-all duration-300 hover:bg-yellow-500"
+              className="text-lg text-white transition-all duration-300 hover:text-yellow-500"
             >
               About
             </Link>
@@ -35,7 +39,7 @@ const Navbar = () => {
           <li>
             <Link
               href="/events"
-              className="bg-gray-200 px-4 py-2 rounded-md transition-all duration-300 hover:bg-yellow-500"
+              className="text-lg text-white transition-all duration-300 hover:text-yellow-500"
             >
               Events
             </Link>
@@ -43,7 +47,7 @@ const Navbar = () => {
           <li>
             <Link
               href="/schedule"
-              className="bg-gray-200 px-4 py-2 rounded-md transition-all duration-300 hover:bg-yellow-500"
+              className="text-lg text-white transition-all duration-300 hover:text-yellow-500"
             >
               Schedule
             </Link>
@@ -51,7 +55,7 @@ const Navbar = () => {
           <li>
             <Link
               href="/login"
-              className="bg-gray-200 px-4 py-2 rounded-md transition-all duration-300 hover:bg-yellow-500"
+              className="text-lg text-white transition-all duration-300 hover:text-yellow-500"
             >
               Login/Sign Up
             </Link>
